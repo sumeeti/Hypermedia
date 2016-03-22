@@ -6,8 +6,8 @@
  * Time: 10:11 PM
  */
 
-
-require __DIR__ . '/vendor/autoload.php';
+namespace hyper;
+require __DIR__ . '/../vendor/autoload.php';
 use Rize\UriTemplate;
 
 class Client {
