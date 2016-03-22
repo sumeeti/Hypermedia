@@ -23,11 +23,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="8" selection-start="191" selection-end="191" vertical-scroll-proportion="0.22537562" vertical-offset="0" max-vertical-offset="599">
+            <state line="9" column="23" selection-start="206" selection-end="206" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="21" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1230">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="14" selection-start="104" selection-end="104" vertical-scroll-proportion="0.2003339" vertical-offset="0" max-vertical-offset="599">
+              <folding>
+                <element signature="e#6#88#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,7 +55,7 @@
       <file leaf-file-name="Client.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="41" selection-start="131" selection-end="131" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1215">
+            <state line="80" column="1" selection-start="90" selection-end="2519" vertical-scroll-proportion="-23.708334" vertical-offset="556" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -44,7 +64,7 @@
       <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="45" selection-start="164" selection-end="164" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="360">
+            <state line="9" column="45" selection-start="0" selection-end="383" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="360">
               <folding>
                 <element signature="e#6#88#0" expanded="true" />
               </folding>
@@ -65,6 +85,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/Client.php" />
+        <option value="$PROJECT_DIR$/src/Client.php" />
+        <option value="$PROJECT_DIR$/test/test.php" />
       </list>
     </option>
   </component>
@@ -116,6 +138,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Hypermedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hypermedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hypermedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hypermedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hypermedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,26 +264,42 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="206" selection-end="206" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="1" selection-start="90" selection-end="2519" vertical-scroll-proportion="-23.708334" vertical-offset="556" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="45" selection-start="164" selection-end="164" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="360">
+        <state line="9" column="45" selection-start="0" selection-end="383" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="360">
           <folding>
             <element signature="e#6#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client.php">
+    <entry file="file://$PROJECT_DIR$/test/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="131" selection-end="131" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="191" selection-end="191" vertical-scroll-proportion="0.22537562" vertical-offset="0" max-vertical-offset="599">
-          <folding />
+        <state line="8" column="14" selection-start="104" selection-end="104" vertical-scroll-proportion="0.2003339" vertical-offset="0" max-vertical-offset="599">
+          <folding>
+            <element signature="e#6#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
