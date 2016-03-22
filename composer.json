@@ -1,0 +1,15 @@
+{
+    "name": "sumeeti/hypermedia",
+    "authors": [
+        {
+            "name": "Sumeeti",
+            "email": "sumeeti.lalwani@commonfloor.com"
+        }
+    ],
+    "require": {
+        "rize/uri-template":"~0.3",
+        "php-curl-class/php-curl-class":"~2.0",
+        "ext-curl":"*"
+
+    }
+}
