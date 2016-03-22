@@ -38,7 +38,6 @@ class Client {
     }
 
     public function __call($name, $arguments) {
-        // Note: value of $name is case sensitive.
         $urit = new UriTemplate($this->uri);
         $head = '/'.$name;
         $tail = array();
@@ -49,18 +48,17 @@ class Client {
         $expanded = $urit->expand($head, $tail);
         var_dump($expanded);
         $options = array(
-            CURLOPT_RETURNTRANSFER => true,     // return web page
-            CURLOPT_HEADER         => true,    // don't return headers
-            CURLOPT_FOLLOWLOCATION => true,     // follow redirects
-            CURLOPT_ENCODING       => "",       // handle all encodings
-            CURLOPT_USERAGENT      => "Chrome/31.0.1700.0", // who am i
-            CURLOPT_AUTOREFERER    => true,     // set referer on redirect
-            CURLOPT_CONNECTTIMEOUT => 120,      // timeout on connect
-            CURLOPT_TIMEOUT        => 120,      // timeout on response
-            CURLOPT_MAXREDIRS      => 10,       // stop after 10 redirects
-            CURLOPT_SSL_VERIFYPEER => false     // Disabled SSL Cert checks
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HEADER         => true,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_ENCODING       => "",
+            CURLOPT_USERAGENT      => "Chrome/31.0.1700.0",
+            CURLOPT_AUTOREFERER    => true,
+            CURLOPT_CONNECTTIMEOUT => 120,
+            CURLOPT_TIMEOUT        => 120,
+            CURLOPT_MAXREDIRS      => 10,
+            CURLOPT_SSL_VERIFYPEER => false
         );
-//              $r = curl_init('http://'.$host);
 
         $curl = curl_init($expanded);
         curl_setopt_array($curl, $options);

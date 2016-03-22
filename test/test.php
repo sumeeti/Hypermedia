@@ -6,7 +6,7 @@
  * Time: 9:18 PM
  */
 
-require_once 'Client.php';
+require_once '../src/Client.php';
 $client = new Client("https://api.github.com");
 //var_dump($client->getUri());
 $user = $client->users('captn3m0');
