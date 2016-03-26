@@ -15,7 +15,7 @@ class Client {
     public $uri = "";
     public $body = "";
     public $headers = "";
-    function __construct($host, $body, $header) {
+    function __construct($host, $body=null, $header=null) {
 
         $this->setUri($host);
         $this->setBody($body);
@@ -46,35 +46,18 @@ class Client {
             $tail['arg'.$i] = $argument;
         }
         $expanded = $urit->expand($head, $tail);
-        var_dump($expanded);
-        $options = array(
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_HEADER         => true,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_ENCODING       => "",
-            CURLOPT_USERAGENT      => "Chrome/31.0.1700.0",
-            CURLOPT_AUTOREFERER    => true,
-            CURLOPT_CONNECTTIMEOUT => 120,
-            CURLOPT_TIMEOUT        => 120,
-            CURLOPT_MAXREDIRS      => 10,
-            CURLOPT_SSL_VERIFYPEER => false
-        );
-
-        $curl = curl_init($expanded);
-        curl_setopt_array($curl, $options);
-        $content = curl_exec($curl);
-        $header_size = curl_getinfo($curl, CURLINFO_HEADER_SIZE);
-        $header = substr($content, 0, $header_size);
-        $body = substr($content, $header_size);
-        $body = json_decode($body, false);
-        if(is_array($body)) {
-            foreach($body as $b) {
-                $result[] = new client($b->url, json_encode($b), $header);
-            }
+        $b = json_decode($this->body, false);
+        if(isset($b->{$name})) {
+            return json_encode($b->{$name});
         } else {
-            $result = new client($expanded, json_encode($body), $header);
+            $result = \Curl_Helper::curlGet($expanded);
+            return $result;
         }
-        return $result;
+
     }
 
+    public function next() {
+        preg_match( '/^link: (.*)$/im', $this->headers, $matches);
+        var_dump($matches);
+    }
 }
