@@ -35,25 +35,25 @@
       <file leaf-file-name="Client.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-14.958333" vertical-offset="346" max-vertical-offset="945">
+            <state line="42" column="45" selection-start="845" selection-end="845" vertical-scroll-proportion="-14.875" vertical-offset="198" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientList.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClientList.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClientList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="51" selection-start="804" selection-end="804" vertical-scroll-proportion="-10.583333" vertical-offset="136" max-vertical-offset="735">
+            <state line="24" column="38" selection-start="493" selection-end="493" vertical-scroll-proportion="-0.22704507" vertical-offset="421" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="curlHelper.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="curlHelper.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/curlHelper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="88" selection-end="88" vertical-scroll-proportion="0.15025042" vertical-offset="0" max-vertical-offset="690">
+            <state line="9" column="27" selection-start="137" selection-end="137" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="690">
               <folding>
                 <element signature="e#6#88#0" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
       <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="26" selection-start="346" selection-end="346" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="390">
+            <state line="27" column="19" selection-start="608" selection-end="608" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -83,10 +83,10 @@
         <option value="$PROJECT_DIR$/Client.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/test/test.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/curlHelper.php" />
-        <option value="$PROJECT_DIR$/src/Client.php" />
+        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/ClientList.php" />
+        <option value="$PROJECT_DIR$/src/Client.php" />
       </list>
     </option>
   </component>
@@ -263,7 +263,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -325,31 +325,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="346" selection-end="346" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="390">
+        <state line="27" column="19" selection-start="608" selection-end="608" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-14.958333" vertical-offset="346" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ClientList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="51" selection-start="804" selection-end="804" vertical-scroll-proportion="-10.583333" vertical-offset="136" max-vertical-offset="735">
+        <state line="42" column="45" selection-start="845" selection-end="845" vertical-scroll-proportion="-14.875" vertical-offset="198" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/curlHelper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="88" selection-end="88" vertical-scroll-proportion="0.15025042" vertical-offset="0" max-vertical-offset="690">
+        <state line="9" column="27" selection-start="137" selection-end="137" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="690">
           <folding>
             <element signature="e#6#88#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="493" selection-end="493" vertical-scroll-proportion="-0.22704507" vertical-offset="421" max-vertical-offset="1020">
+          <folding />
         </state>
       </provider>
     </entry>

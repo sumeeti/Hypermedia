@@ -19,31 +19,50 @@ class ClientList extends \ArrayObject {
         $this->headers = $headers;
     }
 
-    public function next() {
+    /**
+     * @param $name - API name
+     * @param $arguments - API parameters
+     * @return array of Client objects
+     */
+    public function __call($name, $arguments) {
         preg_match( '/^link: (.*)$/im', $this->headers, $matches);
         $link_info = $matches[1];
         $links = explode( ',', $link_info );
-        $nextpage = null;
-        foreach ( $links as $link ) {
-            if (preg_match( '/<(.*?)>; rel="next"$/', $link, $matches )) {
-                $nextpage = $matches[1];
-            }
-        }
-        $result = \Curl_Helper::curlGet($nextpage);
-        return $result;
-    }
+        $relativepage = null;
+        switch($name) {
+            case 'next':
+                foreach ( $links as $link ) {
+                    if (preg_match( '/<(.*?)>; rel="next"$/', trim($link), $matches )) {
+                        $relativepage = $matches[1];
+                    }
+                }
+                break;
 
-    public function prev() {
-        preg_match( '/^link: (.*)$/im', $this->headers, $matches);
-        $link_info = $matches[1];
-        $links = explode( ',', $link_info );
-        $prevpage = null;
-        foreach ( $links as $link ) {
-            if (preg_match( '/<(.*?)>; rel="prev"$/', $link, $matches )) {
-                $prevpage = $matches[1];
-            }
+            case 'prev':
+                foreach ( $links as $link ) {
+                    if (preg_match( '/<(.*?)>; rel="prev"$/', trim($link), $matches )) {
+                        $relativepage = $matches[1];
+                    }
+                }
+                break;
+
+            case 'first':
+                foreach ( $links as $link ) {
+                    if (preg_match( '/<(.*?)>; rel="first"$/', trim($link), $matches )) {
+                        $relativepage = $matches[1];
+                    }
+                }
+                break;
+
+            case 'last':
+                foreach ( $links as $link ) {
+                    if (preg_match( '/<(.*?)>; rel="last"$/', trim($link), $matches )) {
+                        $relativepage = $matches[1];
+                    }
+                }
+                break;
         }
-        $result = \Curl_Helper::curlGet($prevpage);
+        $result = \Curl_Helper::curlGet($relativepage);
         return $result;
     }
 } 

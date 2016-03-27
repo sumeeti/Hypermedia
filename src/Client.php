@@ -37,6 +37,11 @@ class Client {
         $this->headers = $headers;
     }
 
+    /**
+     * @param $name - API name
+     * @param $arguments - API parameters
+     * @return array|client|ClientList|string
+     */
     public function __call($name, $arguments) {
         $urit = new UriTemplate($this->uri);
         $head = '/'.$name;
@@ -54,10 +59,5 @@ class Client {
             return $result;
         }
 
-    }
-
-    public function next() {
-        preg_match( '/^link: (.*)$/im', $this->headers, $matches);
-        var_dump($matches);
     }
 }
